@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fastly.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://echarts.apache.org/zh/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+    />
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+    <script type="text/javascript">
+      document.getElementById('nav-doc').className = 'active'
+    </script>
+    <script src="https://fastly.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://fastly.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
+    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141228404-1"></script>
+    <script>
+      var _hmt = _hmt || []
+      ;(function() {
+        var hm = document.createElement('script')
+
+        hm.src = 'https://hm.baidu.com/hm.js?54b918eee37cb8a7045f0fd0f0b24395'
+
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-141228404-1');
+    </script>
+  </body>
+</html>
